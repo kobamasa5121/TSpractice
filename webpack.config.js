@@ -4,7 +4,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-  mode: 'production',
+  //本番環境をビルドするときは「production」に変更
+  mode: 'development',
   devtool: 'source-map',
   entry: {
     main: './src/typescripts/main.ts',
